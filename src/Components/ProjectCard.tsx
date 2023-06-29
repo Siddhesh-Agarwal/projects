@@ -22,6 +22,7 @@ export default function ProjectCard({ key, props }: { key: number, props: Projec
                         <img
                             src={props.image}
                             alt={props.title}
+                            loading="lazy"
                             className="w-full h-48 object-cover"
                         />
                     }
