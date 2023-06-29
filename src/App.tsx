@@ -8,7 +8,8 @@ const ReactProjects: ProjectData[] = [
         image: "https://user-images.githubusercontent.com/68057995/222699221-8e1b319a-a83e-4498-aceb-02737d8437e5.png",
         githubURL: "https://github.com/Siddhesh-Agarwal/github-wrapped",
         liveURL: "https://Siddhesh-Agarwal.github.io/github-wrapped",
-        tags: ["React", "TypeScript", "GitHub API", "Bootstrap"]
+        tags: ["React", "TypeScript", "GitHub API", "Bootstrap"],
+        featured: true
     },
     {
         title: "Pomofocus clone",
@@ -16,7 +17,8 @@ const ReactProjects: ProjectData[] = [
         image: "https://user-images.githubusercontent.com/68057995/220324659-6ef5e3ac-6831-42e1-8190-f7936a111850.png",
         githubURL: "https://github.com/Siddhesh-Agarwal/Pomofocus-Clone",
         liveURL: "https://Siddhesh-Agarwal.github.io/Pomofocus-Clone",
-        tags: ["React", "JavaScript", "SCSS"]
+        tags: ["React", "JavaScript", "SCSS"],
+        featured: true
     },
     {
         title: "Markdown Previewer",
@@ -74,34 +76,38 @@ const PythonProjects: ProjectData[] = [
         description: "A Python library to write HTML and CSS in pure Python in a simple yet elegant manner using the DOM API. Take advantage of all of Python's powerful functionalities with Sierra. Published on PyPI.",
         githubURL: "https://github.com/BrainStormYourWayIn/sierra/",
         liveURL: "https://pypi.org/project/sierra/",
-        tags: ["Python", "PyPI Package", "web dev"]
+        tags: ["Python", "PyPI Package", "web dev"],
+        featured: true
     },
     {
         title: "Matmath",
         description: "A Python library to perform matrix and Vector operations. Published on PyPI.",
         githubURL: "https://github.com/Siddhesh-Agarwal/matmath",
         liveURL: "https://pypi.org/project/matmath/",
-        tags: ["Python", "PyPI Package", "maths"]
+        tags: ["Python", "PyPI Package", "maths"],
+        featured: true
     },
     {
         title: "Cryptmoji",
         description: "A Python library to encrypt and decrypt messages using emojis. Published on PyPI.",
         githubURL: "https://github.com/Siddhesh-Agarwal/Cryptmoji",
         liveURL: "https://pypi.org/project/cryptmoji/",
-        tags: ["Python", "PyPI Package", "cyber security"]
-    },
-    {
-        title: "CGPA Calculator",
-        description: "A Web App to calculate Cumilative and Semester GPA. Made using Python and Streamlit. Deployed on Streamlit Cloud.",
-        githubURL: "https://github.com/Siddhesh-Agarwal/CGPA-Calculator",
-        liveURL: "https://cgpa-calc.streamlit.app/",
-        tags: ["Python", "streamlit"]
+        tags: ["Python", "PyPI Package", "cyber security"],
+        featured: true
     },
     {
         title: "IP Database",
         description: "A Python API to get information about an IP address. Made using streamlit. Deployed on Streamlit Cloud.",
         githubURL: "https://github.com/Siddhesh-Agarwal/IP-DB",
         liveURL: "https://ip-database.streamlit.app",
+        tags: ["Python", "streamlit"],
+        featured: true
+    },
+    {
+        title: "CGPA Calculator",
+        description: "A Web App to calculate Cumilative and Semester GPA. Made using Python and Streamlit. Deployed on Streamlit Cloud.",
+        githubURL: "https://github.com/Siddhesh-Agarwal/CGPA-Calculator",
+        liveURL: "https://cgpa-calc.streamlit.app/",
         tags: ["Python", "streamlit"]
     },
     {
@@ -134,7 +140,7 @@ const PythonProjects: ProjectData[] = [
 
 export default function App() {
     return (
-        <div className="container px-3 min-w-full bg-white dark:bg-gray-800 py-6 md:pb-12 mx-0">
+        <div className="container px-3 min-w-full bg-white dark:bg-slate-800 py-6 md:pb-12 mx-0">
             <h1 className="text-4xl font-bold text-center mb-6 semibold underline dark:text-gray-50">
                 Projects
             </h1>

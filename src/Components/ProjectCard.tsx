@@ -1,6 +1,7 @@
 import { FaGithub, FaGlobe } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import { ProjectData } from '../Types/ProjectData'
+import { FaStar } from 'react-icons/fa'
 
 export default function ProjectCard({ key, props }: { key: number, props: ProjectData }) {
     // Use TailwindCSS to style the project card
@@ -8,14 +9,20 @@ export default function ProjectCard({ key, props }: { key: number, props: Projec
         <motion.div
             className="bg-whiteflex flex-row flex-wrap justify-center shadow-md rounded-lg overflow-hidden border border-gray-200 hover:shadow-xl min-h-72"
             key={key}
-            style={{ backgroundColor: "#f8f9fa" }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
         >
 
             {/* Space between Both divs */}
-            <div className='pb-3 md:pb-6 h-full flex flex-col justify-around dark:bg-slate-800'>
+            <div className='pb-3 md:pb-6 h-full flex flex-col justify-around dark:bg-gray-800/75 relative'>
                 <div className='inline-block'>
+                    {
+                        props?.featured &&
+                        <span className="bg-emerald-500 text-white px-3 py-1 tracking-widest absolute text-sm right-0 top-0 rounded-bl uppercase">
+                            <FaStar className="inline-block mr-1 mb-1" />
+                            Favourite
+                        </span>
+                    }
                     {/* Image */}
                     {
                         props.image &&
