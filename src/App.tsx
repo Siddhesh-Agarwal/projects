@@ -140,7 +140,7 @@ const PythonProjects: ProjectData[] = [
 
 export default function App() {
     return (
-        <div className="container px-3 min-w-full bg-white dark:bg-slate-800 py-6 md:pb-12 mx-0">
+        <div className="container px-4 md:px-8 lg:px-12 min-w-full bg-white dark:bg-slate-800 py-6 md:pb-12">
             <h1 className="text-4xl font-bold text-center mb-6 semibold underline dark:text-gray-50">
                 Projects
             </h1>
